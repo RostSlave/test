@@ -1,20 +1,38 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Button,
+  ImageBackground,
+  SafeAreaView,
+} from "react-native";
+import Chat from "./screens/Chat";
 
 export default function App() {
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ImageBackground
+      source={require("./pictures/qwe.png")}
+      style={styles.image}
+      resizeMode="stretch"
+    >
+      <View style={styles.content}>
+        <Chat />
+      </View>
+    </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  image: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  },
+  content: {
+    flex: 1,
+    display: "flex",
+    alignItems: 'flex-start',
+    justifyContent: 'flex-end',
+    marginBottom: '3%',
+    marginLeft: '3%',
   },
 });

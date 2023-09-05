@@ -1,0 +1,80 @@
+import { StyleSheet } from "react-native";
+
+export const styles = StyleSheet.create({
+  scrolling: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  header: {
+    flex: 1,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    backgroundColor: "rgba(0, 0, 0, 0.33)",
+    display: "flex",
+    flexDirection: "row",
+    paddingLeft: "5%",
+    paddingRight: "5%",
+  },
+  headerTools: {
+    width: "100%",
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-around",
+    gap: "6%",
+  },
+  butn: {
+    width: "30%",
+    display: "flex",
+    justifyContent: "space-around",
+    alignItems: "center",
+    flexDirection: "row",
+    gap: "15%",
+  },
+  lang_bar: {
+    display: "flex",
+    flexDirection: "row",
+  },
+  picker: {
+    backgroundColor: "transparent",
+    fontFamily:'Rubik',
+    color: "white",
+    borderWidth:0,
+  },
+  enlarge: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    width: 18,
+    height: 18,
+    color: "rgba(255, 255, 255, 0.20)",
+    marginRight: "5%",
+  },
+  min: {
+    display: "flex",
+    justifyContent: "center",
+    width: 18,
+    height: 18,
+    color: "rgba(255, 255, 255, 0.20)",
+  },
+  txt: {
+    color: "#23B838",
+    fontSize: 13,
+    fontFamily: "Rubik",
+    fontWeight: "400",
+    justifyContent: "space-around",
+    textTransform: "uppercase",
+    lineHeight: 15,
+    wordWrap: "break-word",
+  },
+  selectedTxt: {
+    color: "white",
+  },
+  bar: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    gap: "4%",
+  },
+});
